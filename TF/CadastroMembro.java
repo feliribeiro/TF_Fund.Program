@@ -3,6 +3,7 @@ package Pucrs.TF;
 public class CadastroMembro {
 private Membro [] vetor;
 private int index;
+
 public CadastroMembro(){
   //criação de vetor de objetos
   vetor = new Membro[10];
@@ -57,4 +58,13 @@ public CadastroMembro(){
           System.out.println("********* ** ***** ** *******");
       }        
   }
+  public int ProcuraMembro(String g){
+        int local=-1;
+        for(int i=0; i<index; i++)
+        {
+           if(vetor[i].getNome().equals(g)){local=i;}            
+                     
+       }
+       return (local + 1);
+   }
 }

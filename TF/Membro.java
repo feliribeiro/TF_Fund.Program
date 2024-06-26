@@ -19,7 +19,7 @@ public void setMatricula(int matricula){ Matricula_Membro = matricula; }
 public void setCidade(String cidade){ Cidade_Membro = cidade; }
     
 public String toString(){
-    return " Nome: " + Nome_Membro + "\n Matricula: " + Matricula_Membro + "\n Cidade: " + Cidade_Membro;
+    return " Nome: " + Nome_Membro + "\n CPF: " + Matricula_Membro + "\n Cidade: " + Cidade_Membro;
 }
 
 }
