@@ -16,10 +16,6 @@ public int getCodigo_Bicicleta(){
 public String getModelo_Bicicleta(){
   return Modelo_Bicicleta;
 }
-public int setQuantidadeDeBicicletaDisponivel(int numero){
-  QuantidadeDeBicicletaDisponivel = QuantidadeDeBicicletaDisponivel + numero;
-  return QuantidadeDeBicicletaDisponivel;
-}
 public int getQuantidadeDeBicicletaDisponivel(){
   return QuantidadeDeBicicletaDisponivel;
 }
@@ -28,6 +24,10 @@ public void setCodigo_bicicleta(int CodeBike){
 }
 public void setModelo_Bicicleta(String ModeloBike){
   Modelo_Bicicleta = ModeloBike;
+}
+public int setQuantidadeDeBicicletaDisponivel(int j){
+  QuantidadeDeBicicletaDisponivel = j;
+  return QuantidadeDeBicicletaDisponivel;
 }
 public String toString(){
   return " Modelo: " + Modelo_Bicicleta + "\n Código: " + Codigo_bicicleta;

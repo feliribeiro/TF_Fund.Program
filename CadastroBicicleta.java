@@ -53,15 +53,22 @@ public class CadastroBicicleta {
         }
         System.out.println("======================");
     }
-    public String totalUnidades(int j){
+    public int totalUnidades(){
        int totalBikes = 0;
         for (int i = 0; i < contador; i++) {
         if (cadastro[i] != null) {
             totalBikes++;
-    
-    }        
-        } return "o total de bicicletas disponíveis é: "+(totalBikes+j);   
+        }        
+        } return (totalBikes);   
     }
+    public boolean verifyBike(int code){
+         for (int i = 0; i < contador; i++) {
+         if (cadastro[i].getCodigo_Bicicleta() == code) {
+            // cadastro[i].setQuantidadeDeBicicletaDisponivel((cadastro[i].getQuantidadeDeBicicletaDisponivel())+1);
+            return true;
+     }        
+         } return false;   
+     }
         }
     
 

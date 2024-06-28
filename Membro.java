@@ -15,6 +15,7 @@ this.Cidade_Membro = Cidade_Membro;
 public int getMatricula(){ return Matricula_Membro;}
 public String getNome(){ return Nome_Membro; }
 public String getCidade(){ return Cidade_Membro; }
+public int getBike(){ return Bicicleta_emprestada; }
 
 
 public void setNome(String nome){ Nome_Membro = nome;}
@@ -26,5 +27,4 @@ public void setBicicleta(int Codigo){ Bicicleta_emprestada = Codigo; }
 public String toString(){
     return " Nome: " + Nome_Membro + "\n CPF: " + Matricula_Membro + "\n Cidade: " + Cidade_Membro+"\n Código da bicicleta emprestada?(-1 nao possui) "+Bicicleta_emprestada;
 }
-
 }

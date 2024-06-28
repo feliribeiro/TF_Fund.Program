@@ -78,14 +78,12 @@ public CadastroMembro(){
 
 public boolean BikeToMembro(int cpf, int escolha_bicicleta){
     for(int i=0; i<index; i++)
-    {
-       if(vetor[i].getMatricula() == cpf){
+    {   if (vetor[i].getBike() == -1 && vetor[i].getMatricula() == cpf){
         vetor[i].setBicicleta(escolha_bicicleta);
-        return true;
-       }            
-    } return false;
-}
-
+        return true; 
+        } }
+        return false;
+    }
 public boolean BikeToMembroOFF(int cpf){
     for(int i=0; i<index; i++)
     {
@@ -93,6 +91,23 @@ public boolean BikeToMembroOFF(int cpf){
         vetor[i].setBicicleta(-1);
         return true;
        }            
+    } return false;
+}
+public int countBike(){
+    int countBike = 0;
+    for(int i=0; i<index; i++)
+    {
+       if(vetor[i].getBike() != -1){
+        countBike++;
+       }            
+    } return countBike;
+}
+public boolean verifyBike(int code){
+    for(int i=0; i<index; i++)
+    {
+       if(vetor[i].getBike() == code){
+        return true;
+    }            
     } return false;
 }
 }
